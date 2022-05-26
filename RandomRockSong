@@ -1,0 +1,90 @@
+
+let rockbands = [{
+    band: 'Aerosmith',
+    songs: 
+    ['Crazy',
+    "Cryin'",
+    'Sweet Emotion',
+    'Amazing',
+    'Dream On',
+    "I Don't Want to Miss a Thing",
+    'Hole in My Soul']
+}, {
+    band: "Guns N' Roses",
+    songs: 
+    ['Welcome to the Jungle',
+    "Sweet Child o'Mine",
+    'You Could Be Mine',
+    'November Rain',
+    "Don't Cry",
+    'Paradise City',
+    'Sympathy For the Devil']
+},{
+    band: 'Bon Jovi',
+    songs: 
+    ['Bad Medicine',
+    'In These Arms',
+    'You Give Love a Bad Name',
+    "I'll Be There For You",
+    "Livin' On a Prayer",
+    'Wanted Dead or Alive',
+    'Always']
+},{
+    band: 'Metallica',
+    songs: 
+    ['Nothing Else Matters',
+    'Master of Puppets',
+    'Whiskey In the Jar',
+    'Enter Sandman',
+    'The Unforgiven',
+    'Seek & Destroy',
+    'One']
+},{
+    band: 'U2',
+    songs: 
+    ['With or Without You',
+    'Where the Streets Have no Name',
+    'Pride',
+    'Even Better Than the Real Thing',
+    'Stay',
+    'Mysterious Ways',
+    'I Will Follow']
+}]
+
+/*function rock () {
+    const randomSong = Math.floor(Math.random()*7);  
+    let rola = '';                          
+    let group = '';                              
+switch(Math.floor(Math.random()*4)) {          
+case 0:
+   rola = aerosmith.songs[rnd];                
+   group = aerosmith.band;
+    break;
+case 1:
+   rola = gunsNroses.songs[rnd];
+   group = gunsNroses.band;
+    break;
+case 2:
+    rola = bonJovi.songs[rnd];
+    group = bonJovi.band;
+    break;
+case 3:
+    rola = metallica.songs[rnd];
+    group = metallica.band;
+    break;
+case 4:
+    rola = aerosmith.songs[rnd];
+    group = aerosmith.band;
+    break;
+}
+console.log(rola + ' --' + group)          
+}
+rock()*/
+
+function rock () {
+    let rnd = Math.floor(Math.random()*5);
+    let rnd2 = Math.floor(Math.random()*7);
+    let rola = rockbands[rnd].songs[rnd2] + ' - ' + rockbands[rnd].band;
+    console.log(rola);
+}
+rock()
